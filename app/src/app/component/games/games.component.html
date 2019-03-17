@@ -1,0 +1,53 @@
+<div class="search-bar">
+  <i class="fas fa-search search-icon"></i>
+  <input type="text" placeholder="Start Date"/>
+  <input type="text" placeholder="End Date"/>
+  <a class="filter-button easing">
+    <i class="fas fa-filter"></i>
+  </a>
+</div>
+
+<div class="result" *ngFor="let result of this.results;">
+  <div class="result-logo">
+    <img src="/assets/miramar.jpg" class="result-logo"/>
+  </div>
+
+  <div class="result-text">
+    <div class="result-header">
+      <div class="result-user">
+        <h3>Miramar</h3>
+        <h4>100 Players</h4>
+        <div class="icon-roll">
+          <a class="bookmark-icon easing">
+            <i class="far fa-bookmark"></i>
+          </a>
+          <p>2 days ago...</p>
+        </div>
+
+      </div>
+      <div class="result-stats">
+        <div class="result-stat">
+          <img src="/assets/parachute.icon.png"/>
+          <p>You are in this game</p>
+        </div>
+        <div class="result-stat">
+          <i class="fas fa-clock"></i>
+          <p>Lasted 25 minutes</p>
+        </div>
+        <div class="result-stat">
+          <img src="/assets/helmet.icon.png"/>
+          <p>itsChrisCates won</p>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="result-buttons">
+      <a class="result-button easing">
+        Review Game
+      </a>
+    </div>
+  </div>
+</div>

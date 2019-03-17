@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass:100,200,300,400,600,700');
+
+$bg: #1C1C1C;
+$fg: #3D9970;
+
+// Default stylings
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Overpass', arial, monospace;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    color: $fg;
+    background: $bg;
+    letter-spacing: 0.5px;
+
+    overflow-x: auto;
+    overflow-y: scroll;
+}
+
+a {
+    color: $fg;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+input, textarea, button {
+    font-family: inherit;
+}

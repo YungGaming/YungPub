@@ -1,0 +1,175 @@
+@import "../../_config.scss";
+
+div.search-bar {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i.search-icon {
+    font-size: 24px;
+    margin: 0 15px;
+  }
+
+  input {
+    width: 480px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: $bg5;
+    color: $fg3;
+    font-size: 18px;
+    padding: 0 15px;
+    margin: 0 15px;
+    text-align: center;
+  }
+
+  a.filter-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $bg5;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: $fg3;
+      color: white;
+    }
+  }
+}
+
+div.player-list {
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  div.player {
+    width: 210px;
+    height: 40px;
+    margin: 15px;
+    background: $bg4;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+div.action-list {
+  width: 100%;
+  height: 370px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+
+  div.map-tracker {
+    width: 320px;
+    height: 320px;
+    margin: 0 15px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  div.action-list-items {
+    width: calc(100% - 365px);
+
+    div.action-list-tabs {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a.action-tab {
+        margin: 0 15px 15px 15px;
+        width: 140px;
+        height: 30px;
+        background: $bg4;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        &.active {
+          background: $fg4;
+        }
+      }
+    }
+
+    div.action-list-item {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      div.item-column:nth-child(1) {
+        width: 120px;
+        height: 100%;
+      }
+      div.item-column:nth-child(2) {
+        width: calc(100% - 120px);
+        height: 100%;
+      }
+
+      div.item-column {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        i {
+          margin: 2.5px 10px 5px 10px;
+        }
+        p {
+          font-size: 14px;
+          font-weight: bold;
+          padding: 0 5px;
+        }
+        background: $bg5;
+        border: 2px solid $bg3;
+      }
+    }
+  }
+}
+
+div.timeline-marker {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+
+  div.time-marker {
+    width: 60px;
+    height: 30px;
+    background: $bg5;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px 0 10px;
+  }
+
+  div.marker-line {
+    width: 480px;
+    height: 5px;
+    background: $bg5;
+    border-radius: 2.5px;
+    position: relative;
+    div.marker-track {
+      position: absolute;
+      left: 30px;
+      top: -10px;
+      width: 3px;
+      height: 25px;
+      border-radius: 2px;
+      background: $bg5;
+    }
+  }
+}

@@ -1,0 +1,156 @@
+@import "../../_config.scss";
+
+div.search-bar {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  i.search-icon {
+    font-size: 24px;
+    margin: 0 15px;
+  }
+
+  input {
+    width: 210px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background: $bg5;
+    color: $fg3;
+    font-size: 18px;
+    padding: 0 15px;
+    margin: 0 15px;
+    text-align: center;
+  }
+
+  a.filter-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: $bg5;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: $fg3;
+      color: white;
+    }
+  }
+}
+
+div.result {
+  margin: 15px;
+  width: calc(100% - 30px);
+  border-radius: 5px;
+  background: $bg5;
+  display: flex;
+  align-items: center;
+
+  div.result-logo {
+    width: 180px;
+    height: 150px;
+    overflow: hidden;
+  }
+
+  img.result-logo {
+    width: 400px;
+  }
+
+  div.result-text {
+    width: calc(100% - 120px);
+  }
+
+  div.result-header {
+    display: flex;
+    padding: 15px;
+    div.result-user {
+      width: 180px;
+
+      h4 {
+        font-size: 14px;
+      }
+
+      div.icon-roll {
+        display: flex;
+        align-items: center;
+        p {
+          margin-left: 5px;
+          font-size: 12px;
+        }
+      }
+
+      a.bookmark-icon {
+        width: 25px;
+        height: 25px;
+        margin: 5px 0;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $bg3;
+        color: white;
+        font-size: 12px;
+        &:hover {
+          background: $fg3;
+        }
+      }
+    }
+
+    div.result-stats {
+      width: calc(100% - 180px);
+      display: flex;
+      align-items: center;
+
+      div.result-stat {
+        width: 34%;
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          display: block;
+          margin: 5px auto;
+        }
+        i {
+          display: block;
+          height: 30px;
+          font-size: 30px;
+          margin: 5px auto;
+          text-align: center;
+        }
+        p {
+          font-weight: bold;
+          font-size: 12px;
+          text-align: center;
+        }
+      }
+
+    }
+  }
+
+  div.result-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0 10px 15px 10px;
+
+    a.result-button {
+      margin: 0 5px;
+      width: 180px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+      background: $bg3;
+      color: white;
+      font-size: 14px;
+      &:hover {
+        background: $fg3;
+      }
+    }
+  }
+}
