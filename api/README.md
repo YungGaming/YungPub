@@ -1,3 +1,9 @@
+# Yung Pub Data Cache / REST API
+
+![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
+![NPM Version](https://img.shields.io/badge/npm-v6.4.1-blue.svg)
+![Node Version](https://img.shields.io/badge/node-v10.14.1-blue.svg)
+
 ## Running in development mode
 
 ```bash

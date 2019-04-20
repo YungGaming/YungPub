@@ -1,9 +1,19 @@
 <div class="heading">
-  <a class="brand">
-    <h2>PUBG Tracker</h2>
-    <p>A comprehensive game analysis tool</p>
-  </a>
-  <a class="menu-button easing">
-    <i class="fas fa-ellipsis-v"></i>
-  </a>
+  <div class="heading-nav">
+    <a class="brand">
+      <img src="/assets/yung/logo.helmet.png"/>
+      <h2>Yung Pub</h2>
+    </a>
+    <a class="nav-item easing" (click)="this.state.tab = 'search'" [class.active]="this.state.tab == 'search'">
+      <i class="fas fa-search"></i>
+      Lookup
+    </a>
+    <a class="nav-item easing" (click)="this.state.tab = 'bookmarks'" [class.active]="this.state.tab == 'bookmarks'">
+      <i class="far fa-bookmark"></i>
+      Bookmarks
+    </a>
+    <a class="menu-button easing">
+      <i class="fab fa-discord"></i>
+    </a>
+  </div>
 </div>

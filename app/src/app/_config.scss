@@ -4,16 +4,17 @@ $bg2: lighten($bg, 2.5%);
 $bg3: lighten($bg, 5%);
 $bg4: lighten($bg, 7.5%);
 $bg5: lighten($bg, 10%);
+$bg6: darken($bg, 5%);
+$bg7: darken($bg, 10%);
 
 $fg: #3f9b71;
 $fg1: $fg;
-$fg2: lighten($fg, 2.5%);
-$fg3: lighten($fg, 5%);
-$fg4: lighten($fg, 7.5%);
-$fg5: lighten($fg, 10%);
+$fg2: darken($fg, 2.5%);
+$fg3: darken($fg, 5%);
+$fg4: darken($fg, 7.5%);
+$fg5: darken($fg, 10%);
+$fg6: darken($fg, 15%);
 
-$header-height: 100px;
-$footer-height: 400px;
 $page-height: calc(100vh - 100px);
 
 div.content {

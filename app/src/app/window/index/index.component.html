@@ -1,27 +1,10 @@
 <div class="content">
   <div class="wrap">
     <app-header></app-header>
-
     <div class="window-content game-list">
-      <div class="tabs">
-        <a class="tab easing" (click)="this.tab = 'search'" [class.active]="this.tab === 'search'">
-          Search Players
-        </a>
-        <a class="tab easing" (click)="this.tab = 'games'" [class.active]="this.tab === 'games'">
-          Your Games
-        </a>
-        <a class="tab easing" (click)="this.tab = 'game'" [class.active]="this.tab === 'game'">
-          Last Game
-        </a>
-        <a class="tab easing" (click)="this.tab = 'profile'" [class.active]="this.tab === 'profile'">
-          Your Profile
-        </a>
-      </div>
-
-      <app-search *ngIf="this.tab === 'search'"></app-search>
-      <app-games *ngIf="this.tab === 'games'"></app-games>
-      <app-game *ngIf="this.tab === 'game'"></app-game>
-      <app-profile *ngIf="this.tab === 'profile'"></app-profile>
+      <app-intro *ngIf="this.state.tab == 'search'"></app-intro>
+      <app-profile *ngIf="this.state.tab == 'profile'"></app-profile>
+      <app-bookmarks *ngIf="this.state.tab == 'bookmarks'"></app-bookmarks>
     </div>
   </div>
 </div>

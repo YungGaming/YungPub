@@ -1,0 +1,9 @@
+@import "../../_config.scss";
+
+div.profile-wrapper {
+  width: 100%;
+  opacity: 1;
+  &.transition {
+    opacity: 0;
+  }
+}

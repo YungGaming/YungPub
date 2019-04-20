@@ -1,0 +1,44 @@
+<div class="profile-header">
+  <div class="profile-header-metadata">
+    <div class="p-metadata">
+      <p class="p-meta-title">itsChrisCates</p>
+      <a class="refresh-button easing">
+        <i class="fas fa-sync-alt"></i>
+        Refresh
+      </a>
+    </div>
+    <div class="p-metadata">
+      <a class="bookmark-button easing">
+        <i class="far fa-bookmark"></i>
+        Bookmark
+      </a>
+    </div>
+    <div class="p-metadata">
+      <img src="/assets/platforms/steam.logo.png"/>
+      <p>Steam</p>
+    </div>
+    <div class="p-metadata">
+      <div class="p-selectbox easing" (click)="this.selectToggle = !this.selectToggle">
+        <div class="p-selectbox-value">
+          Solo FPP
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="p-selectbox-options easing" [class.active]="this.selectToggle">
+          <div class="p-selectbox-option easing">Solo FPP</div>
+          <div class="p-selectbox-option easing">Solo TPP</div>
+          <div class="p-selectbox-option easing">Duo FPP</div>
+          <div class="p-selectbox-option easing">Duo TPP</div>
+          <div class="p-selectbox-option easing">Squad FPP</div>
+          <div class="p-selectbox-option easing">Squad TPP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="profile-header-rank">
+    <img src="/assets/ranks/Unknown.png"/>
+    <h3>Unknown</h3>
+  </div>
+  <div class="profile-header-chart">
+    <ngx-chartjs [data]="this.player.overview" [type]="'radar'" [width]="180" [height]="180" [options]="this.player.chartOptions"></ngx-chartjs>
+  </div>
+</div>

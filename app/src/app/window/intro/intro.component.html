@@ -1,0 +1,26 @@
+<div class="intro-wrapper easing-500" [class.transition]="this.player.loadingState == 'transition'">
+  <div class="logo-animation easing-1000" [class.searching]="this.player.loadingState == 'searching' || this.player.loadingState == 'transition'">
+    <div class="logo-animation-wrap">
+      <div class="square square-one easing"></div>
+      <div class="square square-two easing"></div>
+      <div class="square square-three easing"></div>
+      <img src="/assets/yung/logo.helmet.png"/>
+    </div>
+  </div>
+
+  <div class="searching-text-wrap">
+    <h3 class="searching-text easing-1000" [class.searching]="this.player.loadingState == 'searching'">Loading player, please wait...</h3>
+  </div>
+
+  <div class="normal-content easing-500" [class.searching]="this.player.loadingState == 'searching' || this.player.loadingState == 'transition'">
+    <h2>Yung Pub</h2>
+    <h3>An in depth game analysis tool for PUBG</h3>
+
+    <div class="search-input">
+      <input type="text" placeholder="Lookup Player" [(ngModel)]="this.state.lookupInput"/>
+      <a class="search-button easing" (click)="this.player.lookup(this.state.lookupInput)">
+        <i class="fas fa-search"></i>
+      </a>
+    </div>
+  </div>
+</div>

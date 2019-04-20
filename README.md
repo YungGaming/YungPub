@@ -1,8 +1,12 @@
 # Yung Pub
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![License](https://img.shields.io/badge/license-GPLv3-blue.svg)
 ![NPM Version](https://img.shields.io/badge/npm-v6.4.1-blue.svg)
 ![Node Version](https://img.shields.io/badge/node-v10.14.1-blue.svg)
+
+Yung Pub is an Overwolf application focused on giving in depth insights into players and their matches.
+Learn about players by analyzing each play by play for casuals *or* pro matches.
+Yung Pub is GPLv3 licensed and is part of YungGaming.com, if you have any inquiries about Yung Pub or Yung Gaming you can email :mailbox: hello@chriscates.ca
 
 ## App
 
