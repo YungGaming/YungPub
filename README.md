@@ -45,6 +45,4 @@ yarn dev
 
 - API Documentation: https://docs.yungpub.com (will be available soon)
 
-- License is MIT
-
 - Questions should be directed to :mailbox: hello@chriscates.ca

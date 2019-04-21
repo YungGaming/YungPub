@@ -1,0 +1,22 @@
+@import "../../_config.scss";
+
+div.stats {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+
+  div.stats-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% / 2);
+    height: 30px;
+    padding: 0 15px;
+    font-size: 14px;
+    &.big {
+      font-size: 18px;
+      height: 40px;
+      font-weight: bold;
+    }
+  }
+}

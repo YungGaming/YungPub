@@ -3,9 +3,9 @@
     All Stats
   </a>
   <a class="tab easing" (click)="this.player.tab = 'gun stats'" [class.active]="this.player.tab == 'gun stats'">
-    Gun Stats
+    Weapon Stats
   </a>
-  <a class="tab easing" (click)="this.player.tab = 'game review'" [class.active]="this.player.tab == 'game review'">
+  <a class="tab easing" (click)="this.player.tab = 'game review'" [class.active]="this.player.tab == 'game review' || this.player.tab == 'game analysis'">
     Game Review
   </a>
 </div>

@@ -1,140 +1,140 @@
 export const season = {
-    "PC": [
+    'PC': [
       {
-        "id": "division.bro.official.2018-01",
-        "attributes": {
-          "startDate": "12-21-2017",
-          "endDate": "01-31-2018"
+        'id': 'division.bro.official.2018-01',
+        'attributes': {
+          'startDate': '12-21-2017',
+          'endDate': '01-31-2018'
         }
       },
       {
-        "id": "division.bro.official.2018-02",
-        "attributes": {
-          "startDate": "02-01-2018",
-          "endDate": "02-27-2018"
+        'id': 'division.bro.official.2018-02',
+        'attributes': {
+          'startDate': '02-01-2018',
+          'endDate': '02-27-2018'
         }
       },
       {
-        "id": "division.bro.official.2018-03",
-        "attributes": {
-          "startDate": "02-28-2018",
-          "endDate": "03-26-2018"
+        'id': 'division.bro.official.2018-03',
+        'attributes': {
+          'startDate': '02-28-2018',
+          'endDate': '03-26-2018'
         }
       },
       {
-        "id": "division.bro.official.2018-04",
-        "attributes": {
-          "startDate": "03-31-2018",
-          "endDate": "05-02-2018"
+        'id': 'division.bro.official.2018-04',
+        'attributes': {
+          'startDate': '03-31-2018',
+          'endDate': '05-02-2018'
         }
       },
       {
-        "id": "division.bro.official.2018-05",
-        "attributes": {
-          "startDate": "05-02-2018",
-          "endDate": "05-30-2018"
+        'id': 'division.bro.official.2018-05',
+        'attributes': {
+          'startDate': '05-02-2018',
+          'endDate': '05-30-2018'
         }
       },
       {
-          "id": "division.bro.official.2018-06",
-          "attributes": {
-            "startDate": "05-31-2018",
-            "endDate": "07-04-2018"
+          'id': 'division.bro.official.2018-06',
+          'attributes': {
+            'startDate': '05-31-2018',
+            'endDate': '07-04-2018'
         }
       },
         {
-          "id": "division.bro.official.2018-07",
-          "attributes": {
-            "startDate": "07-05-2018",
-            "endDate": "07-31-2018"
+          'id': 'division.bro.official.2018-07',
+          'attributes': {
+            'startDate': '07-05-2018',
+            'endDate': '07-31-2018'
         }
       },
         {
-          "id": "division.bro.official.2018-08",
-          "attributes": {
-            "startDate": "08-01-2018",
-            "endDate": "08-28-2018"
+          'id': 'division.bro.official.2018-08',
+          'attributes': {
+            'startDate': '08-01-2018',
+            'endDate': '08-28-2018'
         }
       },
         {
-          "id": "division.bro.official.2018-09",
-          "attributes": {
-            "startDate": "08-29-2018",
-            "endDate": "10-02-2018"
+          'id': 'division.bro.official.2018-09',
+          'attributes': {
+            'startDate': '08-29-2018',
+            'endDate': '10-02-2018'
         }
       },
         {
-          "id": "division.bro.official.pc-2018-01",
-          "attributes": {
-            "startDate": "10-03-2018",
-            "endDate": "12-12-2018"
+          'id': 'division.bro.official.pc-2018-01',
+          'attributes': {
+            'startDate': '10-03-2018',
+            'endDate': '12-12-2018'
           }
       },
         {
-          "id": "division.bro.official.pc-2018-02",
-          "attributes": {
-            "startDate": "12-19-2018",
-            "endDate": "03-27-2019"
+          'id': 'division.bro.official.pc-2018-02',
+          'attributes': {
+            'startDate': '12-19-2018',
+            'endDate': '03-27-2019'
          }
       },
       {
-        "id": "division.bro.official.pc-2018-03",
-        "attributes": {
-          "startDate": "03-28-2019",
-          "endDate": "00-00-0000"
+        'id': 'division.bro.official.pc-2018-03',
+        'attributes': {
+          'startDate': '03-28-2019',
+          'endDate': '00-00-0000'
        }
       }
     ],
-    "XBOX": [
+    'XBOX': [
       {
-        "id": "division.bro.official.xb-pre1",
-        "attributes": {
-          "startDate": "12-10-2017",
-          "endDate": "05-22-2018"
+        'id': 'division.bro.official.xb-pre1',
+        'attributes': {
+          'startDate': '12-10-2017',
+          'endDate': '05-22-2018'
         }
       },
       {
-        "id": "division.bro.official.2018-05",
-        "attributes": {
-          "startDate": "05-23-2018",
-          "endDate": "07-17-2018"
+        'id': 'division.bro.official.2018-05',
+        'attributes': {
+          'startDate': '05-23-2018',
+          'endDate': '07-17-2018'
         }
       },
       {
-        "id": "division.bro.official.2018-07",
-        "attributes": {
-          "startDate": "07-18-2018",
-          "endDate": "09-03-2018"
+        'id': 'division.bro.official.2018-07',
+        'attributes': {
+          'startDate': '07-18-2018',
+          'endDate': '09-03-2018'
         }
       },
       {
-        "id": "division.bro.official.2018-08",
-        "attributes": {
-          "startDate": "09-04-2018",
-          "endDate": "01-22-2019"
+        'id': 'division.bro.official.2018-08',
+        'attributes': {
+          'startDate': '09-04-2018',
+          'endDate': '01-22-2019'
         }
       },
       {
-        "id": "division.bro.official.xbox-01",
-        "attributes": {
-          "startDate": "01-22-2019",
-          "endDate": "00-00-0000"
+        'id': 'division.bro.official.xbox-01',
+        'attributes': {
+          'startDate': '01-22-2019',
+          'endDate': '00-00-0000'
         }
       }
     ],
-    "PS4": [
+    'PS4': [
       {
-        "id": "division.bro.official.2018-09",
-        "attributes": {
-          "startDate": "12-07-2018",
-          "endDate": "01-22-2019"
+        'id': 'division.bro.official.2018-09',
+        'attributes': {
+          'startDate': '12-07-2018',
+          'endDate': '01-22-2019'
         }
       },
       {
-        "id": "division.bro.official.playstation-01",
-        "attributes": {
-          "startDate": "01-22-2019",
-          "endDate": "00-00-0000"
+        'id': 'division.bro.official.playstation-01',
+        'attributes': {
+          'startDate': '01-22-2019',
+          'endDate': '00-00-0000'
         }
       }
     ]

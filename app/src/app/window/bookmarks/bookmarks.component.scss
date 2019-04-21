@@ -1,0 +1,29 @@
+@import "../../_config.scss";
+
+div.bookmark {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  padding: 0 15px;
+  border-bottom: 2px solid $bg4;
+
+  div.bookmark-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  a.bookmark-button {
+    margin: 0 15px;
+    width: 120px;
+    height: 30px;
+    border-radius: 5px;
+    background: $bg5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

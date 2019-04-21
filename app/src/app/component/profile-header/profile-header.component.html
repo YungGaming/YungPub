@@ -1,23 +1,27 @@
-<div class="profile-header">
-  <div class="profile-header-metadata">
-    <div class="p-metadata">
+<div class="profile-header easing" [class.condensed]="this.condensed">
+  <a class="condense-button easing" (click)="this.condensed = !this.condensed">
+    <i class="fas fa-window-maximize"></i>
+  </a>
+
+  <div class="profile-header-metadata easing">
+    <div class="p-metadata easing">
       <p class="p-meta-title">itsChrisCates</p>
       <a class="refresh-button easing">
         <i class="fas fa-sync-alt"></i>
         Refresh
       </a>
     </div>
-    <div class="p-metadata">
+    <div class="p-metadata easing">
       <a class="bookmark-button easing">
         <i class="far fa-bookmark"></i>
         Bookmark
       </a>
     </div>
-    <div class="p-metadata">
+    <div class="p-metadata easing">
       <img src="/assets/platforms/steam.logo.png"/>
       <p>Steam</p>
     </div>
-    <div class="p-metadata">
+    <div class="p-metadata easing">
       <div class="p-selectbox easing" (click)="this.selectToggle = !this.selectToggle">
         <div class="p-selectbox-value">
           Solo FPP
@@ -34,9 +38,10 @@
       </div>
     </div>
   </div>
-  <div class="profile-header-rank">
+  <div class="profile-header-rank easing">
     <img src="/assets/ranks/Unknown.png"/>
     <h3>Unknown</h3>
+    <h3>9001 (Rank #1)</h3>
   </div>
   <div class="profile-header-chart">
     <ngx-chartjs [data]="this.player.overview" [type]="'radar'" [width]="180" [height]="180" [options]="this.player.chartOptions"></ngx-chartjs>

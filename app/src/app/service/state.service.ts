@@ -5,7 +5,13 @@ import { Injectable } from '@angular/core';
 })
 export class StateService {
 
-  public tab = 'profile'; // search
+  public tabStates = [
+    'search',
+    'profile',
+    'bookmarks',
+  ];
+
+  public tab = 'profile';
   public lookupInput = '';
 
   constructor() { }

@@ -1,0 +1,44 @@
+@import "../../_config.scss";
+
+div.stats {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  div.stats-item {
+    margin: 15px;
+    width: calc(50% - 30px);
+    background: $bg5;
+    border-radius: 15px;
+
+    div.stats-item-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 15px;
+      h4 {
+        margin-left: 15px;
+      }
+      img {
+        margin-top: 10px;
+        width: auto;
+        height: 20px;
+      }
+    }
+
+    div.stats-item-data {
+      display: flex;
+      flex-wrap: wrap;
+
+      div.data-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        height: 30px;
+        font-size: 12px;
+        padding: 0 15px;
+      }
+    }
+  }
+}

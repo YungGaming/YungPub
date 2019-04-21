@@ -17,18 +17,18 @@ import { ProfileComponent } from './window/profile/profile.component';
 
 // Reusable components
 import { HeaderComponent } from './component/header/header.component';
-import { SearchComponent } from './component/search/search.component';
 import { GamesComponent } from './component/games/games.component';
 import { GameComponent } from './component/game/game.component';
 import { ProfileHeaderComponent } from './component/profile-header/profile-header.component';
 import { ProfileTabsComponent } from './component/profile-tabs/profile-tabs.component';
+import { ProfileAllStatsComponent } from './component/profile-all-stats/profile-all-stats.component';
+import { ProfileGunStatsComponent } from './component/profile-gun-stats/profile-gun-stats.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     HeaderComponent,
-    SearchComponent,
     GamesComponent,
     ProfileComponent,
     GameComponent,
@@ -36,6 +36,8 @@ import { ProfileTabsComponent } from './component/profile-tabs/profile-tabs.comp
     BookmarksComponent,
     ProfileHeaderComponent,
     ProfileTabsComponent,
+    ProfileAllStatsComponent,
+    ProfileGunStatsComponent,
   ],
   imports: [
     BrowserModule,

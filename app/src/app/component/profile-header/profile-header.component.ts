@@ -9,7 +9,7 @@ import { PlayerService } from '../../service/player.service';
 })
 export class ProfileHeaderComponent implements OnInit {
 
-  public selectToggle = false;
+  public condensed = false;
 
   constructor(public state: StateService, public player: PlayerService) { }
 

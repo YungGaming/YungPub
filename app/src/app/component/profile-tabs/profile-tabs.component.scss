@@ -1,7 +1,9 @@
 @import "../../_config.scss";
 
 div.profile-tabs {
+  position: relative;
   display: flex;
+  justify-content: center;
   width: 100%;
   height: 50px;
   background: $bg6;

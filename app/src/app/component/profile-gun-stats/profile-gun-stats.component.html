@@ -1,0 +1,28 @@
+<div class="stats">
+  <div class="stats-item" *ngFor="let weapon of this.player.weapons; let i = index;">
+    <div class="stats-item-header">
+      <div class="image-wrap">
+        <img src="/assets/items/weapon/{{weapon.uri}}.png"/>
+      </div>
+      <h4>{{weapon.name}}</h4>
+    </div>
+    <div class="stats-item-data">
+      <div class="data-item">
+        <p>Accuracy</p>
+        <p>100%</p>
+      </div>
+      <div class="data-item">
+        <p>Leg Shots</p>
+        <p>0%</p>
+      </div>
+      <div class="data-item">
+        <p>Body Shots</p>
+        <p>0%</p>
+      </div>
+      <div class="data-item">
+        <p>Head Shots</p>
+        <p>100%</p>
+      </div>
+    </div>
+  </div>
+</div>

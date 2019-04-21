@@ -1,97 +1,50 @@
-<div class="search-bar">
-  <i class="fas fa-search search-icon"></i>
-  <input type="text" placeholder="Search players by name or id"/>
-  <a class="filter-button easing">
-    <i class="fas fa-filter"></i>
-  </a>
-</div>
-
-<div class="player-list">
-  <div class="player">
-    itsChrisCates
-  </div>
-  <div class="player">
-    itsChrisCates
-  </div>
-  <div class="player">
-    itsChrisCates
-  </div>
-  <div class="player">
-    itsChrisCates
-  </div>
-  <div class="player">
-    itsChrisCates
-  </div>
-  <div class="player">
-    itsChrisCates
-  </div>
-</div>
-
-<div class="action-list">
-  <div class="map-tracker">
-    <img src="/assets/miramar.map.jpg"/>
-  </div>
-  <div class="action-list-items">
-    <div class="action-list-tabs">
-      <a class="action-tab easing active">
-        Actions
-      </a>
-      <a class="action-tab easing">
-        Items
-      </a>
-      <a class="action-tab easing">
-        Stats
-      </a>
-    </div>
-
-    <div class="action-list-item">
-      <div class="item-column">
-          <p><i class="fas fa-clock"></i> 1:20</p>
-        </div>
-      <div class="item-column">
-        <p>Picked up a SCAR-L</p>
-      </div>
-    </div>
-    <!-- action list item -->
-    <div class="action-list-item">
-      <div class="item-column">
-          <p><i class="fas fa-clock"></i> 2:40</p>
-        </div>
-      <div class="item-column">
-        <p>Killed noob 123 with SCAR-L</p>
-      </div>
-    </div>
-    <!-- action list item -->
-    <div class="action-list-item">
-      <div class="item-column">
-          <p><i class="fas fa-clock"></i> 4:20</p>
-        </div>
-      <div class="item-column">
-        <p>Killed another noob with SCAR-L</p>
-      </div>
-    </div>
-    <!-- action list item -->
-    <div class="action-list-item">
-      <div class="item-column">
-          <p><i class="fas fa-clock"></i> 4:20</p>
-        </div>
-      <div class="item-column">
-        <p>Won game</p>
-      </div>
-    </div>
-    <!-- action list item -->
-  </div>
-
-  <div class="timeline-marker">
-    <div class="time-marker">
-      0:00
-    </div>
-    <div class="marker-line">
-      <div class="marker-track"></div>
+<div class="game">
+  <div class="timeline">
+    <a class="timeline-button play-button easing">
+      <i class="fas fa-play"></i>
+    </a>
+    <a class="timeline-button pause-button easing">
+      <i class="fas fa-pause"></i>
+    </a>
+    <div class="time-input">
+      <input type="text" placeholder="0:00"/>
+      <p>of 4:20</p>
     </div>
     <div class="time-marker">
-      4:20
+      <div class="time-tick easing"></div>
+      <div class="time-line"></div>
     </div>
   </div>
-
+  <!-- timeline -->
+  <div class="player-data">
+    <div class="player-select"></div>
+  </div>
+  <!-- player data -->
+  <div class="map easing" [class.condensed]="this.condensed">
+    <a class="expand-button easing" (click)="this.condensed = !this.condensed">
+      <i class="fas fa-expand"></i>
+    </a>
+    <img src="/assets/maps/layout/Erangel.png" class="map"/>
+  </div>
+  <!-- map -->
+  <div class="interaction-list easing" [class.condensed]="this.condensed">
+    <div class="interaction-item interaction-header">
+      <div class="interaction-column">
+        <i class="fas fa-stopwatch"></i>
+      </div>
+      <div class="interaction-column">
+        <i class="fas fa-exclamation"></i>
+        Action
+      </div>
+      <div class="interaction-column">
+        <i class="fas fa-user-injured"></i>
+        Damage
+      </div>
+      <div class="interaction-column">
+        <i class="far fa-clipboard"></i>
+        Notes
+      </div>
+    </div>
+  </div>
+  <!-- interactions -->
 </div>

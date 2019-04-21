@@ -3,13 +3,11 @@ import { StateService } from '../../service/state.service';
 import { PlayerService } from '../../service/player.service';
 
 @Component({
-  selector: 'app-games',
-  templateUrl: './games.component.html',
-  styleUrls: ['./games.component.scss']
+  selector: 'app-profile-all-stats',
+  templateUrl: './profile-all-stats.component.html',
+  styleUrls: ['./profile-all-stats.component.scss']
 })
-export class GamesComponent implements OnInit {
-
-  public condensed = true;
+export class ProfileAllStatsComponent implements OnInit {
 
   constructor(public state: StateService, public player: PlayerService) { }
 

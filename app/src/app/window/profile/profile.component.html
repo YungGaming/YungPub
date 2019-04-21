@@ -1,4 +1,8 @@
 <div class="profile-wrapper easing-500" [class.transition]="this.player.loadingState == 'transition'">
   <app-profile-header></app-profile-header>
   <app-profile-tabs></app-profile-tabs>
+  <app-profile-all-stats *ngIf="this.player.tab == 'all stats'"></app-profile-all-stats>
+  <app-profile-gun-stats *ngIf="this.player.tab == 'gun stats'"></app-profile-gun-stats>
+  <app-games *ngIf="this.player.tab == 'game review'"></app-games>
+  <app-game *ngIf="this.player.tab == 'game analysis'"></app-game>
 </div>

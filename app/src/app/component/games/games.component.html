@@ -1,53 +1,70 @@
-<div class="search-bar">
-  <i class="fas fa-search search-icon"></i>
-  <input type="text" placeholder="Start Date"/>
-  <input type="text" placeholder="End Date"/>
-  <a class="filter-button easing">
+<div class="game-filters easing" [class.condensed]="this.condensed">
+  <a class="filter-button easing" (click)="this.condensed = !this.condensed">
     <i class="fas fa-filter"></i>
   </a>
+  <div class="game-maps easing">
+    <a
+      class="game-map easing"
+      *ngFor="let map of this.player.mapTypes; let i = index;"
+      [class.active]="this.player.mapFilters.indexOf(map) !== -1"
+      (click)="this.player.toggleFilter(map);">
+      <div class="overlay">
+        <p>{{map}}</p>
+        <i class="fas fa-check-circle easing"></i>
+      </div>
+      <img src="/assets/maps/preview/{{map}}.png"/>
+    </a>
+  </div>
 </div>
 
-<div class="result" *ngFor="let result of this.results;">
-  <div class="result-logo">
-    <img src="/assets/miramar.jpg" class="result-logo"/>
-  </div>
-
-  <div class="result-text">
-    <div class="result-header">
-      <div class="result-user">
-        <h3>Miramar</h3>
-        <h4>100 Players</h4>
-        <div class="icon-roll">
-          <a class="bookmark-icon easing">
-            <i class="far fa-bookmark"></i>
-          </a>
-          <p>2 days ago...</p>
-        </div>
-
-      </div>
-      <div class="result-stats">
-        <div class="result-stat">
-          <img src="/assets/parachute.icon.png"/>
-          <p>You are in this game</p>
-        </div>
-        <div class="result-stat">
-          <i class="fas fa-clock"></i>
-          <p>Lasted 25 minutes</p>
-        </div>
-        <div class="result-stat">
-          <img src="/assets/helmet.icon.png"/>
-          <p>itsChrisCates won</p>
-        </div>
-      </div>
+<div class="game-list">
+  <div class="game">
+    <img src="/assets/maps/preview/Erangel.png"/>
+    <div class="game-column">
+      <h3>
+        <i class="fas fa-map-marked"></i>
+        Map
+        Erangel
+      </h3>
+      <h3>
+        <i class="fas fa-calendar-alt"></i>
+        Date
+        11/11/11
+      </h3>
+      <h3>
+        <i class="fas fa-stopwatch"></i>
+        Time
+        25:00
+      </h3>
+      <h3>
+        <i class="fas fa-gamepad"></i>
+        Solo FPP
+      </h3>
     </div>
-
-
-
-
-    <div class="result-buttons">
-      <a class="result-button easing">
-        Review Game
-      </a>
+    <div class="game-column">
+      <h3>
+        <i class="fas fa-medal"></i>
+        Rank
+        1
+      </h3>
+      <h3>
+        <i class="fas fa-user-injured"></i>
+        Kills
+        11
+      </h3>
+      <h3>
+        <i class="far fa-heart"></i>
+        Healed
+        9001
+      </h3>
+      <h3>
+        <i class="fas fa-crosshairs"></i>
+        Damage
+        9001
+      </h3>
     </div>
+    <a class="review-button easing" (click)="this.player.reviewGame()">
+      Review
+    </a>
   </div>
 </div>
